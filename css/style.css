@@ -1,0 +1,650 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:  oswald, sans-serif;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+.main{
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.navbar{
+	position: fixed;
+	top: 25%;
+	left:0;
+	z-index: 99;
+}
+
+.navbar ul li{
+	width: 270px;
+}
+
+.navbar ul li a{
+	color: #333;
+	background-color: #fff;
+	width: 95%;
+	height: 75px;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 75px; 
+	margin-bottom: 10px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 0 50px 50px 0; 
+	transition: all ease 1s;
+}
+
+.navbar ul li:nth-child(1) a{
+	width: 85%;
+	text-align: center;
+	padding-right: 56px;
+}
+.navbar ul li:nth-child(2) a{
+	width: 85%;
+	text-align: right;
+	padding-right: 50px;
+}
+.navbar ul li:nth-child(3) a{
+	width: 85%;
+	text-align: right;
+	padding-right: 46px; 
+}
+.navbar ul li:nth-child(4) a{
+	width: 85%;
+	text-align: right;
+	padding-right: 46px;
+}
+.navbar ul li:nth-child(5) a{
+	width: 85%;
+	text-align: right;
+	padding-right: 64px;
+}
+
+
+.navbar ul li a:hover{
+	background: #3399FF;
+	color: #000;
+	width: 100%;   
+}
+.navbar ul li a.active{
+	background-color: #006AD4;
+	width: 100% 
+}
+
+/*	Home Section Style 	*/
+.home-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+}
+
+.home-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 25%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.home-section h1:hover{
+	color:#DB7093;
+}
+.home-section h4:hover{
+	color:#DB7093;
+}
+.home-section h1{
+	font-size: 88px;
+	text-transform: uppercase; 
+}
+.home-section h4{
+	font-size: 38px;
+	font-weight: 400;
+}
+
+/*	About Me Section Style 	*/
+.aboutme-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+.aboutme-section-text{
+	float: right;
+	font-size: 25px;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 30px;
+	color: #fff;
+}
+.aboutme-navbar{
+	margin-left:5% ; 
+	top: 30%;
+	left: 35%;
+	z-index: 99;
+}
+.aboutme-navbar ul li a:hover{
+	color: #3399FF;
+	width: 100%;   
+}
+
+.aboutme-navbar ul li a{
+	color: #FFF;
+	width: 95%;
+	text-decoration: none;
+	line-height: 65px; 
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.aboutme-section h1{
+	color: #3399FF;
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+/*	About me Bachelor of Engineering Section */
+.boe-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.boe-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.boe-section h1{
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.boe-section h2{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.boe-section h3{
+	font-size: 21px;
+	font-weight: 300;
+	margin-top: 20px;
+
+}
+.boe-section-text p{
+	margin-left: 3%;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+
+
+/* About me Diploma Section */
+.dip-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.dip-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.dip-section h1{
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.dip-section h2{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.dip-section h3{
+	font-size: 21px;
+	font-weight: 300;
+	margin-top: 20px;
+
+}
+.dip-section-text p{
+	margin-left: 3%;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+/* About me SSC Section */
+.ssc-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.ssc-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.ssc-section h1{
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.ssc-section h2{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.ssc-section h3{
+	font-size: 21px;
+	font-weight: 300;
+	margin-top: 20px;
+
+}
+.ssc-section-text p{
+	margin-left: 3%;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+/*	Project Section Style 	*/
+.projects-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+.projects-section-text{
+	float: right;
+	font-size: 25px;
+	width: 70%;
+	margin-top: 11%;
+	color: #fff;
+}
+.projects-navbar{
+	margin-left:5% ; 
+	top: 30%;
+	left: 35%;
+	z-index: 99;
+
+}
+.projects-navbar ul li{
+	margin-left: 30px;
+}
+
+.projects-navbar ul li a:hover{
+	color: #3399FF;
+	width: 100%;   
+}
+.projects-navbar ul li a{
+	color: #FFF;
+	width: 95%;
+	height: 75px;
+	text-decoration: none;
+	line-height: 70px; 
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.projects-section h1{
+	color: #3399FF;
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+/*	Engineering Third Year Section */
+.te-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.te-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.te-section h1{
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.te-section h2{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.te-section h3{
+	font-size: 21px;
+	font-weight: 300;
+	margin-top: 20px;
+
+}
+.te-section-text p{
+	margin-left: 3%;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+
+
+/* Diploma Third Year Section */
+.diploma-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.diploma-section-text{
+	float: right;
+	width: 70%;
+	margin-top: 11%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.diploma-section h1{
+	font-size: 30px;
+	font-weight: 500;
+
+}
+
+.diploma-section h2{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.diploma-section h3{
+	font-size: 21px;
+	font-weight: 300;
+	margin-top: 20px;
+
+}
+.diploma-section-text p{
+	margin-left: 3%;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+
+/*	Work Section Style 	*/
+.extra-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.extra-section-text{
+	float: right;
+	width: 75%;
+	margin-top: 9%;
+	padding: 0 50px;
+	color: #fff;
+}
+
+.extra-section h1{
+	font-size: 30px;
+	font-weight: 500;
+	color: #3399FF;
+}
+
+.extra-section h3{
+	font-size: 21px;
+	font-weight: 100;
+	margin-top: 20px;
+
+}
+.extra-section b{
+	 color: #3399FF;
+}
+.extra-section ul li{
+	margin-left: 20px;
+}
+.extra-section button{
+	color:  #006AD4;
+	background: none;
+	border: none;
+	font-size: 16px;
+	padding-top:5px;
+	margin-left: 20px;
+}
+
+
+/*	Contact Me Section Style 	*/
+.contactme-section{
+	background: url(../images/fq1.jpg) no-repeat; 
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+
+.contactme-section-text{
+	float: right;
+	width: 70%;
+	margin-right: 10%;
+	margin-top: 11%;
+	padding: 50px 150px;
+	color: #fff;
+}
+
+.contactme-section-text address{
+	font-size: 22px;
+}
+
+.contactme-section-text a{ 
+	color: #fff;
+} 
+
+.contactme-section h1{
+	color: #3399FF;
+	font-size: 35px;
+	font-weight: 500;
+	margin-bottom:2px;
+}
+.contactme-section h2{
+	font-size: 25px;
+	margin-top: 20px;
+
+}
+@media screen and (max-width: 800px) {
+	.navbar{
+		position: fixed;
+		top: 25%;
+		left:0;
+		z-index: 99;
+	}
+
+	.navbar ul li{
+		width: 170px;
+	}
+
+	.navbar ul li a{
+		color: #333;
+		background-color: #fff;
+		width: 95%;
+		height: 75px;
+		display: inline-block;
+		text-decoration: none;
+		line-height: 75px; 
+		margin-bottom: 10px;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 0 50px 50px 0; 
+		transition: all ease 1s;
+	}
+
+	.navbar ul li:nth-child(1) a{
+		width: 80%;
+		text-align: center;
+		padding-right: 57px;
+	}	 
+	.navbar ul li:nth-child(2) a{
+		width: 80%;
+		text-align: right;
+		padding-right: 43px;
+	}
+	.navbar ul li:nth-child(3) a{
+		width: 80%;
+		text-align: right;
+		padding-right: 43px; 
+	}
+	.navbar ul li:nth-child(4) a{
+		width: 80%;
+		text-align: right;
+		padding-right: 42px;
+	}
+	.navbar ul li:nth-child(5) a{
+		width: 80%;
+		text-align: right;
+		padding-right: 52px;
+	}
+	.navbar ul li a:hover{
+		background: #3399FF;
+		color: #000;
+		width: 100%;   
+	}
+	.navbar ul li a.active{
+		background-color: #006AD4;
+	}
+	.home-section-text{
+		float: right;
+		width: 70%;
+		margin-top: 55%;
+		padding: 0 50px;
+		color: #fff;
+	}
+	.home-section h1{
+		font-size: 44px;
+		text-transform: uppercase; 
+	}
+	.home-section h4{
+		font-size: 19px;
+		font-weight: 400;
+	}
+	.contactme-section-text{
+		width: 100%;
+		float: right;
+		margin-top: 20%;
+		padding: 50px 150px;
+		color: #fff;
+	}
+
+	.contactme-section-text address{
+		font-size: 11px;
+		margin-left: 40%;
+	}
+
+	.contactme-section-text a{ 	
+		color: #fff;
+	} 
+
+	.contactme-section h1{
+		margin-left: 40%;
+		color: #3399FF;
+		font-size: 35px;
+		font-weight: 500;
+		margin-bottom:2px;
+	}
+	.contactme-section h2{
+		margin-left: 40%;
+		font-size: 12px;
+		margin-top: 20px;
+	}
+	.contactme-section p{
+		margin-left: 40%;
+	}
+}
